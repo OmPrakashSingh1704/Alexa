@@ -30,7 +30,7 @@ import sounddevice as sd
 import re
 
 transcriber = pipeline("automatic-speech-recognition", model="openai/whisper-base.en")
-genai.configure(api_key='AIzaSyA3qU83mCzg23ogwvPHx8mfFgCUNJtXvmk')  # Replace 'YOUR_API_KEY' with your actual API key
+genai.configure(api_key='API_KEY')  # Replace 'YOUR_API_KEY' with your actual API key
 model = genai.GenerativeModel('gemini-pro')
 
 previous_text = ""  # Variable to store the previously transcribed text
